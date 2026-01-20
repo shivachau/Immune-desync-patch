@@ -8,7 +8,10 @@ explicitly bounded assumptions.
 This repository is a governance-first systems artifact.
 It is not a product, diagnostic system, predictive model, or clinical tool.
 
----
+## Summary
+A governance-first exploratory system that detects loss of recovery
+coordination under explicit assumptions, with formal termination
+criteria and no diagnostic or predictive claims.
 
 ## Project Status
 
