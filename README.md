@@ -35,3 +35,22 @@ Functions as:
 - a bounded exploratory artifact that can be invalidated quickly
 
 Termination is a valid outcome.
+## Governance Flow (Textual)
+
+```mermaid
+flowchart TD
+    A[Observation Window] --> B{Recovery Trajectory<br/>Directionally Coherent?}
+
+    B -->|Yes| C[Coordination Preserved]
+    B -->|Ambiguous| D[Coordination Uncertain]
+    B -->|No| E[Coordination Failed]
+
+    D --> F{Persistence Over Time?}
+    F -->|Resolves| C
+    F -->|Persists| E
+
+    E --> G[Assumption Stress Test]
+    G -->|Assumption Holds| H[Continue v2 Observation]
+    G -->|Assumption Fails| I[Terminate v2]
+
+    I --> J[Archive Findings]
